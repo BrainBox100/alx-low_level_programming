@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *  *  main - prints a given phrase
- *   *  Return: 0 if exited properly, non-zero otherwise
- *    */
+ *    main - prints a given phrase
+ *    Return: 0 if exited properly, non-zero otherwie
+  /
 
 int  main(void)
 {
