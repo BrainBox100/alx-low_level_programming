@@ -2,20 +2,20 @@
 
 /**
  * main - main block
- * Description: Use `putchar` function to print the alphabet in lowercase.
+ * Description: program prints alphabet in lower case
+ * followed by a new line
  * Return: 0
  */
 
 int main(void)
-{
-	char c = 'a';
+{	
+	char c;
 
-	while (c <= 'z')
-	{
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-		c++;
-	}
 
 	putchar('\n');
 	return (0);
 }
+		
+
