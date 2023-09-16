@@ -2,26 +2,19 @@
 
 /**
  * main - main block
- * Description: Use `putchar` to print lowercase and then uppercase alphabet.
+ * Description:print alphabets in lowercase
+ * and then in uppercase followed by a new line
  * Return: 0
  */
 
 int main(void)
-{
-	char c = 'a';
-	char C = 'A';
+{	char c;
+	char d;
 
-	while (c <= 'z')
-	{
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-		c++;
-	}
-
-	while (C <= 'Z')
-	{
-		putchar(C);
-		C++;
-	}
+	for (d = 'A'; d <= 'Z'; d++)
+		putchar(d);
 	putchar('\n');
 	return (0);
 }
