@@ -1,8 +1,8 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
  * _sqrt_recursion - Calculate the square root recursively.
- * @n: Number to calculate the square root of.
+ * @number: Number to calculate the square root of.
  *
  * Return: The square root of 'n', or -1 if none.
  */
