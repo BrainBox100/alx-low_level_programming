@@ -8,15 +8,13 @@
  */
 
 int _sqrt_recursion(int n)
+	int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (_sqrt_extension(n, 0));
-	}
+	int _sqrt_extension(int number, int root);
+
+	int root = 1;
+
+	return (_sqrt_extension(n, root));
 }
 
 /**
