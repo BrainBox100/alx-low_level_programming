@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_reverse_recursion - reverse a string to stdout using recursion.
+ * _print_rev_recursion - Reverse a string to stdout using recursion.
  * @s: A pointer to the character array string.
- * Description: This function recursively prints in
- * reverse each character of the string
- * pointed to by 's' until it reaches the null terminator.
+ *
+ * Description: This function recursively prints in reverse each character of
+ * the string pointed to by 's' until it reaches the null terminator.
  *
  * Return: None.
  */
