@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - main block
  * @argc: The number of command-line arguments
  * @argv: Array of pointers to the command-line arguments
  *
