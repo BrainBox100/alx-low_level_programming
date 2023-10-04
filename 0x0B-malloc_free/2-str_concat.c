@@ -25,10 +25,10 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	len1 = 0;
 	while (s1[len1] != '\0')
-	       	len1++;
+		len1++;
 	len2 = 0;
 	while (s2[len2] != '\0')
-	       	len2++;
+		len2++;
 	total_len = len1 + len2 + 1;
 	s = (char *)malloc(total_len * sizeof(char));
 	if (s == NULL)
@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	while (s1[i] != '\0')
 	{
 		s[i] = s1[i];
-                i++;
+		i++;
 	}
 	j = 0;
 	while (s2[j] != '\0')
