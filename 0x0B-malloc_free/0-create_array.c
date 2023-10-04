@@ -16,8 +16,12 @@ char *create_array(unsigned int size, char c)
 	char *pArray;
 	unsigned int count;
 
+	if (size == 0)
+		return (NULL);
+
 	pArray = malloc(size * sizeof(char));
-	pArray[0] = c;
+	if (pArray == NULL)
+		return (NULL);
 	for (count = 0; count < size; count++)
 	{
 		pArray[count] = c;
