@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt - function that returns natural square root of numbers
+ * _sqrt_recursion - function that returns natural square root of numbers
  * @n - input number
  *
  * Return: 0.
  */
+
 int _sqrt_recursion(int n)
 {
 	if (n <= 0)
@@ -13,6 +14,14 @@ int _sqrt_recursion(int n)
 	else 
 		return (support_function(n, 0));
 }
+
+/**
+ * support_function - helper function to solve _sqrt_recursion
+ * @root: number to determine if square root
+ * @number:  int number
+ * Return: square root if natural square root, or -1 if none found
+ */
+
 int support_function(int number, int root)
 {
 	if ((root * root) > number)
