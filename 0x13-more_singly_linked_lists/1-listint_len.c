@@ -14,7 +14,7 @@ size_t listint_len(const listint_t *h)
 	while (starter != NULL)
 	{
 		counter += 1;
-		starter = cursor->next;
+		starter = starter->next;
 	}
 	return (counter);
 }
