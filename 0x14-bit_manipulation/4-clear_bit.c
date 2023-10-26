@@ -1,23 +1,15 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * flip_bits - function counts the number of bits to change
- * @n: first number
- * @m: second number
- * Return: The number of bits to change
+ * clear_bit -  function sets the value of a bit to 0
+ * @n: parameter
+ * @index: index
+ * Return: 1 if works, -1 if error
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int k, counter = 0;
-	unsigned long int currentBit;
-	unsigned long int bitwiseDiff = n ^ m;
-
-	for (k = 63; k >= 0; k--)
-	{
-		currentBit = bitwiseDiff >> k;
-		if (currentBit & 1)
-			counter++;
-	}
-
-	return (counter);
+	if (index > sizeof(n) * 8)
+		return (-1);
+	*n &= ~(1 << index);
+	return (1);
 }
