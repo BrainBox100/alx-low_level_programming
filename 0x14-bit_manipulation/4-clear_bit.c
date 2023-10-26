@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	for (k = 63; k >= 0; k--)
 	{
-		currentBit = bitwiseDiff >> i;
+		currentBit = bitwiseDiff >> k;
 		if (currentBit & 1)
 			counter++;
 	}
