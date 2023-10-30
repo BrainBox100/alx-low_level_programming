@@ -27,8 +27,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	/** To process opened file **/
-	r = read(fd, b, letters);
-	w = write(STDOUT_FILENO, b, reader);
+	reader = read(fd, b, letters);
+	writer = write(STDOUT_FILENO, b, reader);
 
 	/** To close opened file **/
 	close(fd);
